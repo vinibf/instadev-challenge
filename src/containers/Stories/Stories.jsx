@@ -6,16 +6,15 @@ import './Stories.scss';
 
 const Stories = ({ stories, getUserHandler }) => {
   return (
-    <React.Fragment>
+    <div data-testid="stories">
       <section className="stories">
         <div className="container">
         </div>
       </section>
-
-      {showStory && (
-        <Story />
-        )}
-    </React.Fragment>
+    
+      {/* showStory && (<Story />) */}
+      <Story />
+    </div>
   );
 };
 
